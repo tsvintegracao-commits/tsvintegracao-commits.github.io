@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Callback TSV</title></head>
+<body style="font-family:sans-serif;padding:40px">
+  <h2>Código de autorização</h2>
+  <p id="c">Nenhum código recebido.</p>
+  <script>
+    const code = new URLSearchParams(location.search).get("code");
+    if (code) document.getElementById("c").textContent = code;
+  </script>
+</body>
+</html>
